@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Portfolio from './components/Portfolio';
@@ -12,41 +13,45 @@ import Portraits from './components/pages/Portraits';
 import Pricing from './components/pages/Pricing';
 import AboutPage from './components/pages/AboutPage';
 import Inquire from './components/pages/Inquire';
-import { PageType } from './types';
+import SEO from './components/SEO';
+import Schema from './components/Schema';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<PageType>('home');
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'headshots':
-        return <Headshots />;
-      case 'portraits':
-        return <Portraits />;
-      case 'pricing':
-        return <Pricing />;
-      case 'about':
-        return <AboutPage />;
-      case 'inquire':
-        return <Inquire />;
-      case 'home':
-      default:
-        return (
-          <>
-            <Hero />
-            <Portfolio />
-            <About />
-            <Testimonials />
-          </>
-        );
-    }
-  };
-
   return (
     <div className="min-h-screen bg-background text-text selection:bg-white/20 selection:text-white flex flex-col">
-      <Header onNavigate={setCurrentPage} currentPage={currentPage} />
+      <ScrollToTop />
+      <Header />
       <main className="flex-grow">
-        {renderPage()}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <SEO
+                title="Pascal Zirn Photography | Vancouver Headshots & Portraits"
+                description="Professional headshot and portrait photographer in Vancouver, BC. Specializing in actor headshots, corporate profiles, and artistic portraits."
+              />
+              <Schema />
+              <Hero />
+              <Portfolio />
+              <About />
+              <Testimonials />
+            </>
+          } />
+          <Route path="/headshots" element={<Headshots />} />
+          <Route path="/portraits" element={<Portraits />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/inquire" element={<Inquire />} />
+        </Routes>
       </main>
       <Footer />
     </div>

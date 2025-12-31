@@ -1,31 +1,28 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { getBookingMonths } from '../utils/dateUtils';
 import { motion, AnimatePresence } from 'framer-motion';
-import { PageType } from '../types';
+import { Link, useLocation } from 'react-router-dom';
 
-interface HeaderProps {
-  onNavigate: (page: PageType) => void;
-  currentPage: PageType;
-}
-
-const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
+const Header: React.FC = () => {
   const { next } = useMemo(() => getBookingMonths(), []);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const navItems: { label: string; id: PageType }[] = [
-    { label: 'Headshots', id: 'headshots' },
-    { label: 'Portraits', id: 'portraits' },
-    { label: 'Pricing', id: 'pricing' },
-    { label: 'About', id: 'about' },
-    { label: 'Inquire', id: 'inquire' },
+  const navItems = [
+    { label: 'Headshots', path: '/headshots' },
+    { label: 'Portraits', path: '/portraits' },
+    { label: 'Pricing', path: '/pricing' },
+    { label: 'About', path: '/about' },
+    { label: 'Inquire', path: '/inquire' },
   ];
 
-  const handleNav = (page: PageType) => {
+  // Close menu when route changes
+  useEffect(() => {
     setIsMenuOpen(false);
-    onNavigate(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, [location]);
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <>
@@ -33,20 +30,20 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
         <div className="absolute inset-0 bg-background/70 backdrop-blur-md border-b border-white/5"></div>
         <div className="relative max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo Area */}
-          <button 
-            onClick={() => handleNav('home')}
+          <Link
+            to="/"
             className="flex items-center gap-3 z-50 hover:opacity-80 transition-opacity"
           >
             <div className="w-8 h-8 bg-white text-black flex items-center justify-center rounded-sm">
-               <span className="font-serif font-bold text-lg">P</span>
+              <span className="font-serif font-bold text-lg">P</span>
             </div>
             <span className="hidden md:block font-sans font-medium tracking-wide text-sm text-text/90">
               PASCAL
             </span>
-          </button>
+          </Link>
 
           {/* Center: Live Status (Hidden on mobile when menu open for cleanliness) */}
-          <motion.div 
+          <motion.div
             animate={{ opacity: isMenuOpen ? 0 : 1 }}
             className="hidden md:flex items-center gap-3 bg-surface/50 border border-white/10 px-4 py-1.5 rounded-full"
           >
@@ -60,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
           </motion.div>
 
           {/* Hamburger Trigger */}
-          <button 
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="z-50 p-2 -mr-2 text-white hover:text-muted transition-colors relative"
             aria-label="Menu"
@@ -82,22 +79,25 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
           >
             <nav className="flex flex-col items-center gap-8 md:gap-10">
               {navItems.map((item, i) => (
-                <motion.button
-                  key={item.id}
-                  onClick={() => handleNav(item.id)}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ delay: i * 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                  className={`font-serif text-4xl md:text-6xl hover:text-white transition-colors duration-300 ${
-                    currentPage === item.id ? 'text-white italic' : 'text-muted/50'
-                  }`}
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className="relative group"
                 >
-                  {item.label}
-                </motion.button>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 20 }}
+                    transition={{ delay: i * 0.1, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                    className={`font-serif text-4xl md:text-6xl transition-colors duration-300 ${isActive(item.path) ? 'text-white italic' : 'text-muted/50 hover:text-white'
+                      }`}
+                  >
+                    {item.label}
+                  </motion.div>
+                </Link>
               ))}
-              
-              <motion.div 
+
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}

@@ -1,9 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import SEO from '../SEO';
 
 const Headshots: React.FC = () => {
   return (
     <section className="pt-32 pb-24 px-6 max-w-7xl mx-auto min-h-screen">
+      <SEO
+        title="Vancouver Headshots | Actor & Corporate Photography"
+        description="Professional headshots for actors and corporate clients in Vancouver. Theatrical and commercial looks designed to get you booked."
+        canonical="/headshots"
+      />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,9 +22,9 @@ const Headshots: React.FC = () => {
           The Actor's Instrument.
         </h1>
         <p className="text-xl text-muted font-light leading-relaxed max-w-2xl mb-12">
-          Your headshot is not just a picture; it's your primary marketing tool. 
-          We strip away the vanity to reveal the character. Whether you need a 
-          theatrical look for drama or a commercial look for lifestyle, we engineer 
+          Your headshot is not just a picture; it's your primary marketing tool.
+          We strip away the vanity to reveal the character. Whether you need a
+          theatrical look for drama or a commercial look for lifestyle, we engineer
           images that get you in the room.
         </p>
       </motion.div>

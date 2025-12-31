@@ -1,11 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Monitor, Zap, Coffee, Calendar } from 'lucide-react';
+import SEO from '../SEO';
 
 const Inquire: React.FC = () => {
   return (
     <section className="pt-32 pb-24 px-6 max-w-7xl mx-auto min-h-screen">
-       <motion.div
+      <SEO
+        title="Book a Session | Vancouver Headshot Photographer"
+        description="Book your headshot or portrait session with Pascal Zirn. Check availability and secure your spot online."
+        canonical="/inquire"
+      />
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-center max-w-3xl mx-auto mb-20"
