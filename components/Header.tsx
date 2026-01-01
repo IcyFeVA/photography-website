@@ -35,10 +35,10 @@ const Header: React.FC = () => {
             className="flex items-center gap-3 z-50 hover:opacity-80 transition-opacity"
           >
             <div className="w-8 h-8 bg-white text-black flex items-center justify-center rounded-sm">
-              <span className="font-serif font-bold text-lg">P</span>
+              <span className="font-serif font-bold text-lg">PZ</span>
             </div>
             <span className="hidden md:block font-sans font-medium tracking-wide text-sm text-text/90">
-              PASCAL
+              PASCAL ZIRN
             </span>
           </Link>
 
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
             </div>
             <span className="text-xs font-medium tracking-wide text-text/80">
-              Now booking for <span className="text-white font-semibold">{next}</span>
+              Now booking for <span className="text-white font-semibold">{next}: 2 spots left</span>
             </span>
           </motion.div>
 

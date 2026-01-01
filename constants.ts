@@ -3,60 +3,69 @@ import { PortfolioItem, Testimonial } from './types';
 // Using placeholder images that mimic high-end portrait photography
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
-    id: '1',
-    src: 'https://picsum.photos/800/1067?random=1',
-    category: 'THEATRICAL',
+    id: '0',
+    src: '/img/front9.png',
+    category: 'CREATIVE',
     aspectRatio: 'aspect-[3/4]',
-    alt: 'Dramatic actor headshot in black and white'
-  },
-  {
-    id: '2',
-    src: 'https://picsum.photos/800/1200?random=2',
-    category: 'EDITORIAL',
-    aspectRatio: 'aspect-[2/3]',
-    alt: 'Fashion forward editorial shot'
+    alt: 'Artistic portrait with shadow play'
   },
   {
     id: '3',
-    src: 'https://picsum.photos/800/800?random=3',
+    src: '/img/front3.png',
     category: 'CORPORATE',
-    aspectRatio: 'aspect-square',
+    aspectRatio: 'aspect-[4/5]',
     alt: 'Executive portrait'
   },
-  {
-    id: '4',
-    src: 'https://picsum.photos/800/1000?random=4',
-    category: 'LIFESTYLE',
-    aspectRatio: 'aspect-[4/5]',
-    alt: 'Outdoor natural light portrait'
-  },
-  {
-    id: '5',
-    src: 'https://picsum.photos/800/1200?random=5',
-    category: 'THEATRICAL',
-    aspectRatio: 'aspect-[2/3]',
-    alt: 'Intense cinematic headshot'
-  },
+
+  // {
+  //   id: '2',
+  //   src: '/img/front2.png',
+  //   category: 'EDITORIAL',
+  //   aspectRatio: 'aspect-[2/3]',
+  //   alt: 'Fashion forward editorial shot'
+  // },
+
+  // {
+  //   id: '4',
+  //   src: '/img/front4.png',
+  //   category: 'LIFESTYLE',
+  //   aspectRatio: 'aspect-[4/5]',
+  //   alt: 'Outdoor natural light portrait'
+  // },
+  // {
+  //   id: '5',
+  //   src: '/img/front5.png',
+  //   category: 'THEATRICAL',
+  //   aspectRatio: 'aspect-[2/3]',
+  //   alt: 'Intense cinematic headshot'
+  // },
   {
     id: '6',
-    src: 'https://picsum.photos/800/1067?random=6',
+    src: '/img/front6.png',
     category: 'CORPORATE',
     aspectRatio: 'aspect-[3/4]',
     alt: 'Tech CEO headshot'
   },
-  {
-    id: '7',
-    src: 'https://picsum.photos/800/600?random=7',
-    category: 'FAMILY',
-    aspectRatio: 'aspect-[4/3]',
-    alt: 'Candid family moment'
-  },
+  // {
+  //   id: '7',
+  //   src: '/img/front7.png',
+  //   category: 'FAMILY',
+  //   aspectRatio: 'aspect-[4/5]',
+  //   alt: 'Candid family moment'
+  // },
   {
     id: '8',
-    src: 'https://picsum.photos/800/1000?random=8',
+    src: '/img/front8.png',
     category: 'CREATIVE',
-    aspectRatio: 'aspect-[4/5]',
+    aspectRatio: 'aspect-[5/4]',
     alt: 'Artistic portrait with shadow play'
+  },
+  {
+    id: '1',
+    src: '/img/front1.png',
+    category: 'THEATRICAL',
+    aspectRatio: 'aspect-[3/4]',
+    alt: 'Dramatic actor headshot in black and white'
   }
 ];
 

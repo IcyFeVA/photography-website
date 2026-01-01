@@ -20,9 +20,9 @@ const AboutPage: React.FC = () => {
           <div className="aspect-[3/4] bg-surface relative overflow-hidden rounded-sm">
             {/* Placeholder for Pascal's portrait */}
             <img
-              src="https://picsum.photos/800/1067?random=99"
+              src="/img/me.png"
               alt="Pascal - Photographer"
-              className="w-full h-full object-cover filter grayscale contrast-125"
+              className="w-full h-full object-cover"
             />
           </div>
         </motion.div>
@@ -62,7 +62,7 @@ const AboutPage: React.FC = () => {
             </div>
             <div>
               <span className="block text-xs uppercase tracking-widest text-muted/50 mb-1">Tools</span>
-              <span className="font-serif text-xl text-white">Canon R5 & Profoto</span>
+              <span className="font-serif text-xl text-white">Fujifilm X-T3 & Affinity Photo</span>
             </div>
           </div>
         </motion.div>
