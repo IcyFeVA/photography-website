@@ -74,17 +74,17 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't1',
     text: "Pascal understood my casting type immediately. The shots aren't just pretty; they are getting me into rooms I couldn't access before.",
     author: "Elena R.",
-    role: "Lead Actress, Vancouver Film"
+    role: "Actress, Vancouver Film"
   },
   {
     id: 't2',
-    text: "As a realtor, trust is my currency. Pascal engineered a look that is approachable yet undeniably authoritative. The ROI was immediate.",
+    text: "As a realtor, trust is my currency. Pascal captured a look that is approachable yet undeniably authoritative. The ROI was immediate.",
     author: "David C.",
     role: "Sotheby's International Realty"
   },
   {
     id: 't3',
-    text: "I hate having my photo taken. Pascal made the process feel like a design workshop. Calm, precise, and surprisingly enjoyable.",
+    text: "I hate having my photo taken. Pascal made the process feel like a workshop. Calm, professional, and surprisingly enjoyable.",
     author: "Sarah J.",
     role: "VP of Engineering, FinTech"
   },
@@ -99,5 +99,5 @@ export const TESTIMONIALS: Testimonial[] = [
 export const SOCIAL_LINKS = {
   instagram: "#",
   linkedin: "#",
-  email: "mailto:hello@pascal.photo"
+  email: "mailto:hello@pascalzirn.com"
 };
