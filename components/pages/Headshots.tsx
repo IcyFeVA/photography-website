@@ -32,14 +32,14 @@ const Headshots: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
         <div className="space-y-4">
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
-            <img src="https://picsum.photos/800/1000?random=10" alt="Theatrical Headshot" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+            <img src="/img/theatrical1.png" alt="Theatrical Headshot" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </div>
           <h3 className="font-serif text-2xl text-white">Theatrical</h3>
           <p className="text-muted text-sm leading-relaxed">High contrast, moody, and intense. Designed for dramatic roles, villains, and serious character work. We focus on the eyes and the subtext.</p>
         </div>
         <div className="space-y-4 md:mt-24">
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
-            <img src="https://picsum.photos/800/1000?random=11" alt="Commercial Headshot" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <img src="/img/commercial2.png" alt="Commercial Headshot" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
           </div>
           <h3 className="font-serif text-2xl text-white">Commercial</h3>
           <p className="text-muted text-sm leading-relaxed">Approachable, warm, and energetic. Perfect for commercials, sitcoms, and lifestyle print. We use softer lighting to highlight your natural charisma.</p>

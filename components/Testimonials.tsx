@@ -6,7 +6,7 @@ const Testimonials: React.FC = () => {
   return (
     <section className="py-24 max-w-7xl mx-auto px-6">
       <div className="mb-16 md:text-center">
-        <h3 className="font-serif text-3xl md:text-4xl text-text mb-4">Trusted by Professionals</h3>
+        <h3 className="font-serif text-3xl md:text-4xl text-text mb-4">Trusted by the Community</h3>
         <p className="text-muted font-light text-lg">Results that resonate across industries.</p>
       </div>
 

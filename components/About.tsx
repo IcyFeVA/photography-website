@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Palette, PenTool, Aperture } from 'lucide-react';
+// import { Palette, PenTool, Aperture } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -12,23 +12,49 @@ const About: React.FC = () => {
 
         {/* Left: Graphic/Visual Representation */}
         <div className="relative order-2 md:order-1">
-          <div className="grid grid-cols-2 gap-4 opacity-50">
-            <div className="h-64 bg-background rounded-sm flex items-center justify-center border border-white/5">
-              <Palette className="w-12 h-12 text-muted/30" strokeWidth={1} />
-            </div>
-            <div className="h-64 bg-background rounded-sm mt-12 flex items-center justify-center border border-white/5">
-              <Aperture className="w-12 h-12 text-muted/30" strokeWidth={1} />
-            </div>
+          <div className="grid grid-cols-2 gap-6 relative">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative mt-12"
+            >
+              <div className="aspect-[8/10] w-full overflow-hidden">
+                <img
+                  src="/img/front6.png"
+                  alt="Corporate Portrait"
+                  className="w-full h-full object-cover hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="aspect-[8/10] w-full overflow-hidden">
+                <img
+                  src="/img/front1.png"
+                  alt="Theatrical Portrait"
+                  className="w-full h-full object-cover hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
+                />
+              </div>
+            </motion.div>
           </div>
+
           {/* Floating Quote */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-background/90 backdrop-blur border border-white/10 p-8 w-64 md:w-80 text-center"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-full max-w-xs"
           >
-            <span className="font-serif text-2xl italic text-white block mb-2">"Design is intelligence made visible."</span>
-            <span className="text-xs uppercase tracking-widest text-muted">— Alina Wheeler</span>
+            <div className="bg-surface/90 backdrop-blur-md border border-white/10 p-8 text-center shadow-2xl">
+              <span className="font-serif text-2xl italic text-white block mb-4">"Pascal brings his designer's eye to every portrait."</span>
+              <span className="text-xs uppercase tracking-widest text-muted">— Alina Wheeler</span>
+            </div>
           </motion.div>
         </div>
 
