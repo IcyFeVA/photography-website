@@ -65,9 +65,9 @@ const Portraits: React.FC = () => {
         <div className="space-y-4">
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
             <img
-              src="https://picsum.photos/800/1000?random=20"
+              src="/img/corporate1.png"
               alt="Executive Portrait"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
           <h3 className="font-serif text-2xl text-white">The Executive</h3>
@@ -79,7 +79,7 @@ const Portraits: React.FC = () => {
         <div className="space-y-4 md:mt-24">
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
             <img
-              src="https://picsum.photos/800/1000?random=21"
+              src="/img/family1.png"
               alt="Family Portrait"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
@@ -92,14 +92,14 @@ const Portraits: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-12 w-full h-96 overflow-hidden rounded-sm relative">
+      {/* <div className="mt-12 w-full h-96 overflow-hidden rounded-sm relative">
         <img src="https://picsum.photos/1200/600?random=15" alt="Wide corporate shot" className="w-full h-full object-cover opacity-60" />
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="bg-black/50 backdrop-blur px-6 py-3 text-white font-serif italic text-xl">
             Elevate your personal brand.
           </span>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
