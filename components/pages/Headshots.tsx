@@ -24,7 +24,7 @@ const Headshots: React.FC = () => {
         <p className="text-xl text-muted font-light leading-relaxed max-w-2xl mb-12">
           Your headshot is not just a picture; it's your primary marketing tool.
           We strip away the vanity to reveal the character. Whether you need a
-          theatrical look for drama or a commercial look for lifestyle, we engineer
+          theatrical look for drama or a commercial look for lifestyle, we design
           images that get you in the room.
         </p>
       </motion.div>

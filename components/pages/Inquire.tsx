@@ -20,7 +20,7 @@ const Inquire: React.FC = () => {
           The Studio Experience
         </h1>
         <p className="text-xl text-muted font-light">
-          We operate differently. Every session is a collaboration, engineered for results.
+          We operate differently. Every session is a collaboration, designed for results.
         </p>
       </motion.div>
 

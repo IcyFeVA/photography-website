@@ -6,67 +6,67 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     id: '0',
     src: '/img/front9.png',
     category: 'CREATIVE',
-    aspectRatio: 'aspect-[3/4]',
+    aspectRatio: 'aspect-[8/10]',
     alt: 'Artistic portrait with shadow play'
   },
   {
     id: '3',
-    src: '/img/front3.png',
+    src: '/img/front14.png',
     category: 'CORPORATE',
-    aspectRatio: 'aspect-[4/5]',
+    aspectRatio: 'aspect-[8/10]',
     alt: 'Executive portrait'
   },
 
-  // {
-  //   id: '2',
-  //   src: '/img/front2.png',
-  //   category: 'EDITORIAL',
-  //   aspectRatio: 'aspect-[2/3]',
-  //   alt: 'Fashion forward editorial shot'
-  // },
+  {
+    id: '2',
+    src: '/img/front12.png',
+    category: 'EDITORIAL',
+    aspectRatio: 'aspect-[8/10]',
+    alt: 'Fashion forward editorial shot'
+  },
 
-  // {
-  //   id: '4',
-  //   src: '/img/front4.png',
-  //   category: 'LIFESTYLE',
-  //   aspectRatio: 'aspect-[4/5]',
-  //   alt: 'Outdoor natural light portrait'
-  // },
+  {
+    id: '4',
+    src: '/img/front11.png',
+    category: 'LIFESTYLE',
+    aspectRatio: 'aspect-[8/10]',
+    alt: 'Outdoor natural light portrait'
+  },
   // {
   //   id: '5',
-  //   src: '/img/front5.png',
+  //   src: '/img/front12.png',
   //   category: 'THEATRICAL',
-  //   aspectRatio: 'aspect-[2/3]',
+  //   aspectRatio: 'aspect-[8/10]',
   //   alt: 'Intense cinematic headshot'
   // },
   {
     id: '6',
-    src: '/img/front6.png',
+    src: '/img/front13.png',
     category: 'CORPORATE',
-    aspectRatio: 'aspect-[3/4]',
+    aspectRatio: 'aspect-[8/10]',
     alt: 'Tech CEO headshot'
   },
   // {
   //   id: '7',
   //   src: '/img/front7.png',
   //   category: 'FAMILY',
-  //   aspectRatio: 'aspect-[4/5]',
+  //   aspectRatio: 'aspect-[8/10]',
   //   alt: 'Candid family moment'
   // },
   {
     id: '8',
     src: '/img/front8.png',
     category: 'CREATIVE',
-    aspectRatio: 'aspect-[5/4]',
+    aspectRatio: 'aspect-[8/10]',
     alt: 'Artistic portrait with shadow play'
   },
-  {
-    id: '1',
-    src: '/img/front1.png',
-    category: 'THEATRICAL',
-    aspectRatio: 'aspect-[3/4]',
-    alt: 'Dramatic actor headshot in black and white'
-  }
+  // {
+  //   id: '1',
+  //   src: '/img/front12.png',
+  //   category: 'THEATRICAL',
+  //   aspectRatio: 'aspect-[8/10]',
+  //   alt: 'Dramatic actor headshot in black and white'
+  // }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
