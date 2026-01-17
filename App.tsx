@@ -25,8 +25,18 @@ const ScrollToTop = () => {
       window.history.scrollRestoration = 'manual';
     }
 
-    // Force scroll to top
-    window.scrollTo(0, 0);
+    // Blur any focused element (like the footer link) to prevent browser from
+    // fighting the scroll to keep it in view
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+
+    // Force scroll to top immediately, overriding smooth scroll
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    });
   }, [pathname]);
 
   return null;
