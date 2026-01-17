@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { getBookingMonths } from '../utils/dateUtils';
 import { SOCIAL_LINKS } from '../constants';
 import { ArrowRight, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const { current } = useMemo(() => getBookingMonths(), []);
@@ -18,13 +19,14 @@ const Footer: React.FC = () => {
             </h2>
 
             <div className="inline-block">
-              <a
-                href="/inquire"
+              <Link
+                key="inquire"
+                to="/inquire"
                 className="group flex items-center gap-4 text-xl md:text-2xl text-white border-b border-white/20 pb-2 hover:border-white transition-all"
               >
                 <span>Book a Session</span>
                 <ArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
-              </a>
+              </Link>
             </div>
 
             <div className="bg-background/50 border border-white/10 p-6 max-w-md backdrop-blur-sm">
