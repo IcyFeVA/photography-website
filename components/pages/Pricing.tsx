@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../SEO';
+import { Link } from 'react-router-dom';
 
 interface PricingPackage {
   name: string;
@@ -169,9 +170,9 @@ const Pricing: React.FC = () => {
               {/* <li>If Skin Care & Makeup Artist is required</li> */}
               <li>Number of wardrobe choices</li>
             </ul>
-            <a href="https://www.format.com/5342822" target="_blank" rel="noopener noreferrer" className="inline-block mt-6 text-primary hover:text-white transition-colors uppercase tracking-widest text-xs border-b border-primary hover:border-white pb-1">
+            <Link to="/inquire" className="inline-block mt-6 text-primary hover:text-white transition-colors uppercase tracking-widest text-xs border-b border-primary hover:border-white pb-1">
               Book Now via Contact Form
-            </a>
+            </Link>
           </div>
         </div>
       </motion.div>
