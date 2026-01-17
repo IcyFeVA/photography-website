@@ -5,14 +5,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: '0',
     src: '/img/front20.png',
-    category: 'CREATIVE',
+    category: 'ACTRESS',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Artistic portrait with shadow play'
   },
   {
     id: '33',
     src: '/img/front18.png',
-    category: 'CORPORATE',
+    category: 'FRIENDS & FAMILY',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Executive portrait'
   },
@@ -21,14 +21,14 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: '4',
     src: '/img/front11.png',
-    category: 'LIFESTYLE',
+    category: 'MODEL',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Outdoor natural light portrait'
   },
   {
     id: '22',
     src: '/img/front22.png',
-    category: 'THEATRICAL',
+    category: 'THEATRICAL ACTOR',
     aspectRatio: 'aspect-[10/8]',
     alt: 'Intense cinematic headshot'
   },
@@ -37,49 +37,49 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: '3',
     src: '/img/family3.png',
-    category: 'LIFESTYLE',
+    category: 'FAMILY',
     aspectRatio: 'aspect-[4/3]',
     alt: 'Outdoor natural light portrait'
   },
   {
     id: '6',
     src: '/img/front13.png',
-    category: 'CORPORATE',
+    category: 'ARTIST',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Tech CEO headshot'
   },
   {
     id: '7',
     src: '/img/front19.png',
-    category: 'FAMILY',
+    category: 'FRIENDS & FAMILY',
     aspectRatio: 'aspect-[5/4]',
     alt: 'Candid family moment'
   },
   {
     id: '44',
     src: '/img/family4.png',
-    category: 'EDITORIAL',
+    category: 'FAMILY',
     aspectRatio: 'aspect-[4/3]',
     alt: 'Fashion forward editorial shot'
   },
   {
     id: '8',
     src: '/img/front9.png',
-    category: 'CREATIVE',
+    category: 'DANCER',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Artistic portrait with shadow play'
   },
   {
     id: '1',
     src: '/img/front21.png',
-    category: 'THEATRICAL',
+    category: 'MODEL / ACTOR',
     aspectRatio: 'aspect-[4/3]',
     alt: 'Dramatic actor headshot in black and white'
   },
   {
     id: '15',
     src: '/img/front15.png',
-    category: 'THEATRICAL',
+    category: 'TV ACTOR',
     aspectRatio: 'aspect-[5/4]',
     alt: 'Dramatic actor headshot in black and white'
   }
