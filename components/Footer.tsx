@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
 
             <div className="inline-block">
               <a
-                href={SOCIAL_LINKS.email}
+                href="/inquire"
                 className="group flex items-center gap-4 text-xl md:text-2xl text-white border-b border-white/20 pb-2 hover:border-white transition-all"
               >
                 <span>Book a Session</span>

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Monitor, Zap, Coffee, Calendar } from 'lucide-react';
 import SEO from '../SEO';
+import BookingForm from '../BookingForm';
 
 const Inquire: React.FC = () => {
   return (
@@ -48,7 +49,7 @@ const Inquire: React.FC = () => {
         </div>
       </div> */}
 
-      {/* Calendly / Booking Action */}
+      {/* Calendly / Booking Action - HIDDEN FOR NOW
       <div className="max-w-2xl mx-auto bg-surface border border-white/10 p-12 text-center rounded-sm">
         <Calendar className="w-12 h-12 text-green-400 mx-auto mb-6" />
         <h2 className="font-serif text-3xl text-white mb-4">Ready to book?</h2>
@@ -61,7 +62,9 @@ const Inquire: React.FC = () => {
         <p className="mt-6 text-xs text-muted/40">
           Powered by Calendly. Secure payment via Stripe.
         </p>
-      </div>
+      </div> */}
+
+      <BookingForm />
     </section>
   );
 };
