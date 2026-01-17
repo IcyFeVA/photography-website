@@ -50,7 +50,7 @@ const AboutPage: React.FC = () => {
               or convincing a client to trust you with their capital.
             </p>
             <p>
-              My studio in Surrey is a calm, ego-free zone. We listen to good music, we drink good coffee,
+              My studio in North Delta is a calm, ego-free zone. We listen to good music, we drink good coffee,
               and we work until we have the shot.
             </p>
           </div>
@@ -62,7 +62,7 @@ const AboutPage: React.FC = () => {
             </div>
             <div>
               <span className="block text-xs uppercase tracking-widest text-muted/50 mb-1">Tools</span>
-              <span className="font-serif text-xl text-white">Fujifilm X-T3 & Affinity Photo</span>
+              <span className="font-serif text-xl text-white">Fujifilm X-T5 & Affinity Photo</span>
             </div>
           </div>
         </motion.div>

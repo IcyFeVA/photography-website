@@ -21,7 +21,7 @@ const About: React.FC = () => {
             >
               <div className="aspect-[8/10] w-full overflow-hidden">
                 <img
-                  src="/img/front6.png"
+                  src="/img/front17.png"
                   alt="Corporate Portrait"
                   className="w-full h-full object-cover hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
                 />

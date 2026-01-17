@@ -4,26 +4,19 @@ import { PortfolioItem, Testimonial } from './types';
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: '0',
-    src: '/img/front9.png',
+    src: '/img/front20.png',
     category: 'CREATIVE',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Artistic portrait with shadow play'
   },
   {
-    id: '3',
-    src: '/img/front14.png',
+    id: '33',
+    src: '/img/front18.png',
     category: 'CORPORATE',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Executive portrait'
   },
 
-  {
-    id: '2',
-    src: '/img/front12.png',
-    category: 'EDITORIAL',
-    aspectRatio: 'aspect-[8/10]',
-    alt: 'Fashion forward editorial shot'
-  },
 
   {
     id: '4',
@@ -32,13 +25,22 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspectRatio: 'aspect-[8/10]',
     alt: 'Outdoor natural light portrait'
   },
-  // {
-  //   id: '5',
-  //   src: '/img/front12.png',
-  //   category: 'THEATRICAL',
-  //   aspectRatio: 'aspect-[8/10]',
-  //   alt: 'Intense cinematic headshot'
-  // },
+  {
+    id: '22',
+    src: '/img/front22.png',
+    category: 'THEATRICAL',
+    aspectRatio: 'aspect-[10/8]',
+    alt: 'Intense cinematic headshot'
+  },
+
+
+  {
+    id: '3',
+    src: '/img/family3.png',
+    category: 'LIFESTYLE',
+    aspectRatio: 'aspect-[4/3]',
+    alt: 'Outdoor natural light portrait'
+  },
   {
     id: '6',
     src: '/img/front13.png',
@@ -46,27 +48,41 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     aspectRatio: 'aspect-[8/10]',
     alt: 'Tech CEO headshot'
   },
-  // {
-  //   id: '7',
-  //   src: '/img/front7.png',
-  //   category: 'FAMILY',
-  //   aspectRatio: 'aspect-[8/10]',
-  //   alt: 'Candid family moment'
-  // },
+  {
+    id: '7',
+    src: '/img/front19.png',
+    category: 'FAMILY',
+    aspectRatio: 'aspect-[5/4]',
+    alt: 'Candid family moment'
+  },
+  {
+    id: '44',
+    src: '/img/family4.png',
+    category: 'EDITORIAL',
+    aspectRatio: 'aspect-[4/3]',
+    alt: 'Fashion forward editorial shot'
+  },
   {
     id: '8',
-    src: '/img/front8.png',
+    src: '/img/front9.png',
     category: 'CREATIVE',
     aspectRatio: 'aspect-[8/10]',
     alt: 'Artistic portrait with shadow play'
   },
-  // {
-  //   id: '1',
-  //   src: '/img/front12.png',
-  //   category: 'THEATRICAL',
-  //   aspectRatio: 'aspect-[8/10]',
-  //   alt: 'Dramatic actor headshot in black and white'
-  // }
+  {
+    id: '1',
+    src: '/img/front21.png',
+    category: 'THEATRICAL',
+    aspectRatio: 'aspect-[4/3]',
+    alt: 'Dramatic actor headshot in black and white'
+  },
+  {
+    id: '15',
+    src: '/img/front15.png',
+    category: 'THEATRICAL',
+    aspectRatio: 'aspect-[5/4]',
+    alt: 'Dramatic actor headshot in black and white'
+  }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -80,7 +96,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 't2',
     text: "As a realtor, trust is my currency. Pascal captured a look that is approachable yet undeniably authoritative. The ROI was immediate.",
     author: "David C.",
-    role: "Sotheby's International Realty"
+    role: "Realtor in North Vancouver"
   },
   {
     id: 't3',

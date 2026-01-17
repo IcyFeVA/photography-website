@@ -24,7 +24,7 @@ const Inquire: React.FC = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
         <div className="bg-surface/30 p-8 border border-white/5 rounded-sm">
           <Monitor className="w-8 h-8 text-white mb-6" />
           <h3 className="font-serif text-xl text-white mb-3">Tethered Capture</h3>
@@ -46,7 +46,7 @@ const Inquire: React.FC = () => {
             Sessions are blocked with ample buffer time. We don't watch the clock. We create a relaxed environment where you can truly be yourself.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Calendly / Booking Action */}
       <div className="max-w-2xl mx-auto bg-surface border border-white/10 p-12 text-center rounded-sm">

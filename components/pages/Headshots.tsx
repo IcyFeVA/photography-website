@@ -16,10 +16,10 @@ const Headshots: React.FC = () => {
         className="max-w-4xl"
       >
         <span className="text-xs font-sans font-medium text-green-400 uppercase tracking-widest mb-4 block">
-          For Actors & Artists
+          For Actors, Artists, & Professionals
         </span>
         <h1 className="font-serif text-5xl md:text-7xl text-text mb-8">
-          The Actor's Instrument.
+          The Professional's Instrument.
         </h1>
         <p className="text-xl text-muted font-light leading-relaxed max-w-2xl mb-12">
           Your headshot is not just a picture; it's your primary marketing tool.

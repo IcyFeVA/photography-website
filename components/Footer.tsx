@@ -45,10 +45,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col justify-end md:items-end space-y-8">
             <div className="text-left md:text-right space-y-2">
               <p className="text-xs font-sans uppercase tracking-widest text-muted">Home Studio Location</p>
-              <p className="text-white text-lg font-serif">Surrey, BC</p>
+              <p className="text-white text-lg font-serif">North Delta, BC</p>
               <p className="text-muted font-light">Serving the Greater Vancouver Area</p>
             </div>
-
+            {/* 
             <div className="flex gap-6">
               <a href={SOCIAL_LINKS.instagram} className="text-muted hover:text-white transition-colors">
                 <Instagram size={20} strokeWidth={1.5} />
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
               <a href={SOCIAL_LINKS.email} className="text-muted hover:text-white transition-colors">
                 <Mail size={20} strokeWidth={1.5} />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
