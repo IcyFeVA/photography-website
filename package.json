@@ -17,6 +17,12 @@
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.11.0"
   },
+  "overrides": {
+    "react-helmet-async": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  },
   "devDependencies": {
     "@types/node": "^22.19.3",
     "@vitejs/plugin-react": "^5.0.0",
