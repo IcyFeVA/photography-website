@@ -14,7 +14,7 @@ interface PricingPackage {
 const packages: PricingPackage[] = [
   {
     name: "One Look (Headshot)",
-    price: "$275",
+    price: "$475",
     description: "A great place to start for actors, artists or professionals looking to update their look or business profile.",
     features: [
       "Shoot in one+ outfit",
@@ -24,7 +24,7 @@ const packages: PricingPackage[] = [
   },
   {
     name: "Two Looks (Headshots)",
-    price: "$400",
+    price: "$600",
     description: "Perfect for professionals updating company websites & LinkedIn, or actors showcasing theatrical and commercial sides.",
     features: [
       "Shoot in two+ outfits",
@@ -35,7 +35,7 @@ const packages: PricingPackage[] = [
   },
   {
     name: "Portfolio - Four Looks",
-    price: "$600",
+    price: "$800",
     description: "Great for actors to showcase range or for professionals to use on different platforms.",
     features: [
       "Shoot in four+ outfit choices",
