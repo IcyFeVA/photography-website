@@ -11,7 +11,7 @@ interface PricingPackage {
   highlight?: boolean;
 }
 
-const packages: PricingPackage[] = [
+const headshotPackages: PricingPackage[] = [
   {
     name: "One Look (Headshot)",
     price: "$475",
@@ -42,7 +42,10 @@ const packages: PricingPackage[] = [
       "Four meticulously retouched headshot edits",
       "Entire set of images at 75 dpi included"
     ]
-  },
+  }
+];
+
+const portraitPackages: PricingPackage[] = [
   {
     name: "LinkedIn Portrait",
     price: "$250",
@@ -124,8 +127,43 @@ const Pricing: React.FC = () => {
         </p>
       </motion.div>
 
+      {/* Headshots Section */}
+      <h2 className="font-serif text-3xl mb-8 text-center">Headshots</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mb-16">
+        {headshotPackages.map((pkg, index) => (
+          <motion.div
+            key={pkg.name}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className={`relative p-8 border ${pkg.highlight ? 'border-primary/50 bg-white/5' : 'border-white/10 bg-surface'} flex flex-col rounded-sm hover:border-white/20 transition-colors duration-300`}
+          >
+            {pkg.highlight && (
+              <div className="absolute top-0 right-0 bg-primary/20 text-primary text-xs uppercase tracking-widest py-1 px-3 rounded-bl-sm">
+                Most Popular
+              </div>
+            )}
+            <h3 className="font-serif text-2xl mb-2">{pkg.name}</h3>
+            <div className="text-3xl font-light mb-6 text-primary">{pkg.price}</div>
+            <p className="text-muted text-sm mb-8 flex-grow leading-relaxed">
+              {pkg.description}
+            </p>
+            <ul className="space-y-4 mb-8">
+              {pkg.features.map((feature, i) => (
+                <li key={i} className="flex items-start text-sm text-gray-300">
+                  <span className="mr-3 text-primary">⏤</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Portraits Section */}
+      <h2 className="font-serif text-3xl mb-8 text-center">Portraits</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mb-20">
-        {packages.map((pkg, index) => (
+        {portraitPackages.map((pkg, index) => (
           <motion.div
             key={pkg.name}
             initial={{ opacity: 0, y: 20 }}
