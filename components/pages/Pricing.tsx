@@ -43,6 +43,38 @@ const packages: PricingPackage[] = [
       "Entire set of images at 75 dpi included"
     ]
   },
+  {
+    name: "LinkedIn Portrait",
+    price: "$250",
+    description: "A streamlined session designed specifically for your professional online presence.",
+    features: [
+      "30-minute studio/outdoor session",
+      "One outfit",
+      "One retouched image",
+      "Same-day selection available"
+    ]
+  },
+  {
+    name: "Corporate Team",
+    price: "$295 / person",
+    description: "Consistent, high-quality headshots for your entire team. We bring the studio to you.",
+    features: [
+      "Minimum 3 team members",
+      "Efficient 5-10 min per person",
+      "One retouched image per person",
+    ]
+  },
+  {
+    name: "Family Portrait",
+    price: "$400",
+    description: "Timeless portraits capturing the connection of your loved ones.",
+    features: [
+      "45-minute customized session",
+      "Up to 5 family members",
+      "One location",
+      "5 high-resolution edited images"
+    ]
+  },
   // {
   //   name: "Modelling Digitals",
   //   price: "$275",
