@@ -198,7 +198,7 @@ const Pricing: React.FC = () => {
               Please include a general idea of your session requirements:
             </p>
             <ul className="list-disc list-inside text-muted text-sm space-y-2 ml-2">
-              <li>Your preferred time frame</li>
+              <li>Your preferred package (see Pricing page)</li>
               {/* <li>If Skin Care & Makeup Artist is required</li> */}
               <li>Number of wardrobe choices</li>
             </ul>
