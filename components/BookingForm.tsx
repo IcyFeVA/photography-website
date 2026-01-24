@@ -11,7 +11,25 @@ const BookingForm: React.FC = () => {
         const getNextDates = (count: number) => {
             const dates: Date[] = [];
             let current = new Date();
-            current.setDate(current.getDate() + 1); // Start from tomorrow
+
+            // old
+            // current.setDate(current.getDate() + 1); // Start from tomorrow
+            // Start from March 1st
+            current.setMonth(2); // March (0-indexed)
+            current.setDate(1);
+            current.setHours(0, 0, 0, 0);
+
+            // If today is after March 1st, we might need logic to handle that, 
+            // but for now we strictly enforce March 1st as the start of the booking window.
+            // If we are already past March 1st, catch up to tomorrow.
+            if (current < new Date()) {
+                const tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                tomorrow.setHours(0, 0, 0, 0);
+                if (tomorrow > current) {
+                    current = tomorrow;
+                }
+            }
 
             while (dates.length < count) {
                 const day = current.getDay();
