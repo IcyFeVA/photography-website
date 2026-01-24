@@ -15,18 +15,36 @@ const BookingForm: React.FC = () => {
 
             while (dates.length < count) {
                 const day = current.getDay();
-                // 2 = Tuesday, 5 = Friday
-                if (day === 2 || day === 5) {
+                // 1=Mon, 2=Tue, 4=Thu, 5=Fri
+                if (day === 1 || day === 2 || day === 4 || day === 5) {
                     dates.push(new Date(current));
                 }
                 current.setDate(current.getDate() + 1);
             }
             return dates;
         };
-        setDates(getNextDates(6));
+        setDates(getNextDates(12));
     }, []);
 
-    const timeSlots = ["10:00 AM", "1:00 PM", "3:00 PM"];
+    const timeSlots = React.useMemo(() => {
+        if (!selectedDate) return [];
+        const [year, month, day] = selectedDate.split('-').map(Number);
+        const date = new Date(year, month - 1, day);
+        const dayOfWeek = date.getDay();
+
+        switch (dayOfWeek) {
+            case 1: // Monday: 4 pm - 6 pm
+                return ["4:00 PM"];
+            case 2: // Tuesday: 10 am - 12 pm, 2 pm - 4 pm, 4 pm - 6 pm
+                return ["10:00 AM", "2:00 PM", "4:00 PM"];
+            case 4: // Thursday: 4 pm - 6 pm
+                return ["4:00 PM"];
+            case 5: // Friday: 10 am - 12 pm
+                return ["10:00 AM"];
+            default:
+                return [];
+        }
+    }, [selectedDate]);
 
     return (
         <div className="max-w-3xl mx-auto bg-surface border border-white/10 p-8 md:p-12 rounded-sm">
@@ -85,7 +103,10 @@ const BookingForm: React.FC = () => {
                                 <button
                                     key={dateString}
                                     type="button"
-                                    onClick={() => setSelectedDate(dateString)}
+                                    onClick={() => {
+                                        setSelectedDate(dateString);
+                                        setSelectedTime(null);
+                                    }}
                                     className={`
                     p-3 rounded-sm border text-sm transition-all
                     ${isSelected
