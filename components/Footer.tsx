@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                   </p> */}
                   <p className="text-xs text-muted leading-relaxed">
                     Limited to 8 bespoke sessions per month to ensure premium quality.
-                    <span className="text-white font-semibold"> 8 spots available for March 2026.</span>
+                    {/* <span className="text-white font-semibold"> 8 spots available for March 2026.</span> */}
                   </p>
                 </div>
               </div>
