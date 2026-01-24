@@ -1,5 +1,7 @@
 import { PortfolioItem, Testimonial } from './types';
 
+export const IS_BOOKING_OPEN = true;
+
 // Using placeholder images that mimic high-end portrait photography
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {

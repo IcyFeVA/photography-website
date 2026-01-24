@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Monitor, Zap, Coffee, Calendar } from 'lucide-react';
 import SEO from '../SEO';
 import BookingForm from '../BookingForm';
+import { IS_BOOKING_OPEN } from '../../constants';
 
 const Inquire: React.FC = () => {
   return (
@@ -64,15 +65,17 @@ const Inquire: React.FC = () => {
         </p>
       </div> */}
 
-      {/* <BookingForm /> */}
-
-      <div className="max-w-2xl mx-auto text-center py-20 border border-white/10 bg-surface/30 px-6 rounded-sm">
-        <h2 className="font-serif text-3xl text-white mb-6">Currently Fully Booked</h2>
-        <p className="text-muted text-lg leading-relaxed">
-          I am currently fully booked for February. <br />
-          Please check back later for new openings.
-        </p>
-      </div>
+      {IS_BOOKING_OPEN ? (
+        <BookingForm />
+      ) : (
+        <div className="max-w-2xl mx-auto text-center py-20 border border-white/10 bg-surface/30 px-6 rounded-sm">
+          <h2 className="font-serif text-3xl text-white mb-6">Currently Fully Booked</h2>
+          <p className="text-muted text-lg leading-relaxed">
+            I am currently fully booked for February. <br />
+            Please check back later for new openings.
+          </p>
+        </div>
+      )}
     </section>
   );
 };

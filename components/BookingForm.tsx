@@ -72,7 +72,12 @@ const BookingForm: React.FC = () => {
                     </label>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                         {dates.map((date) => {
-                            const dateString = date.toISOString().split('T')[0]; // YYYY-MM-DD
+                            // Ensure we use the local date for the value, not UTC which might be yesterday/tomorrow
+                            const year = date.getFullYear();
+                            const month = String(date.getMonth() + 1).padStart(2, '0');
+                            const day = String(date.getDate()).padStart(2, '0');
+                            const dateString = `${year}-${month}-${day}`;
+
                             const displayDate = date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
                             const isSelected = selectedDate === dateString;
 
