@@ -188,7 +188,7 @@ const BookingForm: React.FC = () => {
                         rows={4}
                         required
                         className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-white/30 transition-colors resize-none"
-                        placeholder="I'm looking for..."
+                        placeholder="I'm looking for... preferred package..."
                     ></textarea>
                 </div>
 
