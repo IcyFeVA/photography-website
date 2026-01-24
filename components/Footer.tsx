@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-xs text-muted/40 font-light tracking-wide">
-          <p>&copy; {new Date().getFullYear()} Pascal Zirn Photography. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Crushy Social Inc. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <span>Headshots & Portraits for actors, artists, 'normal people', models, and professionals</span>
           </div>
