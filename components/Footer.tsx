@@ -34,9 +34,13 @@ const Footer: React.FC = () => {
                 <div className="mt-1 w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
                 <div>
                   <p className="text-sm text-text font-medium mb-1">Limited Availability</p>
-                  <p className="text-xs text-muted leading-relaxed">
+                  {/* <p className="text-xs text-muted leading-relaxed">
                     Limited to 8 bespoke sessions per month to ensure premium quality.
                     <span className="text-white font-semibold"> 2 spots remaining for {current}.</span>
+                  </p> */}
+                  <p className="text-xs text-muted leading-relaxed">
+                    Limited to 8 bespoke sessions per month to ensure premium quality.
+                    <span className="text-white font-semibold"> 8 spots available for March 2026.</span>
                   </p>
                 </div>
               </div>
