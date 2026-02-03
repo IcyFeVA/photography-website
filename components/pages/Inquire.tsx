@@ -19,7 +19,7 @@ const Inquire: React.FC = () => {
         className="text-center max-w-3xl mx-auto mb-20"
       >
         <h1 className="font-serif text-5xl md:text-7xl text-text mb-6">
-          The Studio Experience
+          Inquire
         </h1>
         <p className="text-xl text-muted font-light">
           We operate differently. Every session is a collaboration, designed for results.
