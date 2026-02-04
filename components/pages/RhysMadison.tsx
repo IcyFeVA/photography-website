@@ -67,12 +67,10 @@ const RhysMadison: React.FC = () => {
                     </p>
 
                     <a
-                        href="#" // Placeholder as requested
+                        href="https://drive.google.com/drive/folders/1VHwIEiP-KDS3VrC-1D0a9qXo_slsIKJD?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors duration-300"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            alert("Download link placeholder");
-                        }}
                     >
                         <Download size={20} />
                         Download Full Gallery
