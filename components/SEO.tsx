@@ -8,15 +8,17 @@ interface SEOProps {
   type?: 'website' | 'article';
   name?: string;
   image?: string;
+  noIndex?: boolean;
 }
 
-const SEO: React.FC<SEOProps> = ({ 
-  title, 
-  description, 
+const SEO: React.FC<SEOProps> = ({
+  title,
+  description,
   canonical,
   type = 'website',
   name = 'Pascal Zirn Photography',
-  image = '/og-image.jpg' 
+  image = '/og-image.jpg',
+  noIndex = false
 }) => {
   const siteUrl = 'https://pascalzirn.com';
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
@@ -28,6 +30,7 @@ const SEO: React.FC<SEOProps> = ({
       <title>{title}</title>
       <meta name='description' content={description} />
       <link rel="canonical" href={fullCanonical} />
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
       {/* Open Graph tags (Facebook, LinkedIn, etc.) */}
       <meta property="og:type" content={type} />
