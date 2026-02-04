@@ -13,6 +13,7 @@ import Portraits from './components/pages/Portraits';
 import Pricing from './components/pages/Pricing';
 import AboutPage from './components/pages/AboutPage';
 import Inquire from './components/pages/Inquire';
+import RhysMadison from './components/pages/RhysMadison';
 import SEO from './components/SEO';
 import Schema from './components/Schema';
 
@@ -67,6 +68,7 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/inquire" element={<Inquire />} />
+          <Route path="/rhys-madison" element={<RhysMadison />} />
         </Routes>
       </main>
       <Footer />
