@@ -8,7 +8,7 @@ const RhysMadison: React.FC = () => {
         <section className="pt-32 pb-24 px-6 max-w-7xl mx-auto min-h-screen flex flex-col items-center">
             <SEO
                 title="Rhys Madison | Private Gallery Download"
-                description="Private download page for Rhys Madison Wilson's photography session."
+                description="Private download page for Rhys Madison's photography session."
                 noIndex={true} // Private page, should probably not be indexed
             />
 
@@ -21,7 +21,7 @@ const RhysMadison: React.FC = () => {
                     Client Gallery
                 </span>
                 <h1 className="font-serif text-5xl md:text-7xl text-text mb-6">
-                    Rhys Madison Wilson
+                    Rhys Madison
                 </h1>
                 <p className="text-xl text-muted font-light leading-relaxed">
                     It was a pleasure capturing your session.
