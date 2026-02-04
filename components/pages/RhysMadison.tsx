@@ -7,7 +7,7 @@ const RhysMadison: React.FC = () => {
     return (
         <section className="pt-32 pb-24 px-6 max-w-7xl mx-auto min-h-screen flex flex-col items-center">
             <SEO
-                title="Rhys Madison Wilson | Private Gallery Download"
+                title="Rhys Madison | Private Gallery Download"
                 description="Private download page for Rhys Madison Wilson's photography session."
                 noIndex={true} // Private page, should probably not be indexed
             />
@@ -24,7 +24,7 @@ const RhysMadison: React.FC = () => {
                     Rhys Madison Wilson
                 </h1>
                 <p className="text-xl text-muted font-light leading-relaxed">
-                    It was a pleasure capturing your session. Here are your final edited images.
+                    It was a pleasure capturing your session.
                 </p>
             </motion.div>
 
@@ -59,7 +59,7 @@ const RhysMadison: React.FC = () => {
                 <div className="p-8 border border-white/10 rounded-lg bg-white/5 backdrop-blur-sm max-w-xl mx-auto">
                     <h3 className="font-serif text-2xl text-white mb-4">Ready for Download</h3>
                     <p className="text-muted text-sm mb-8 leading-relaxed">
-                        Please download your full high-resolution gallery below.
+                        Please download all files below.
                         <br />
                         <span className="text-red-400 font-medium mt-2 block">
                             Note: This link will expire in 2 months and files will be permanently deleted.
@@ -67,13 +67,13 @@ const RhysMadison: React.FC = () => {
                     </p>
 
                     <a
-                        href="https://drive.google.com/drive/folders/1VHwIEiP-KDS3VrC-1D0a9qXo_slsIKJD?usp=sharing"
+                        href="https://drive.google.com/drive/folders/1GU12pOn48WpFcundbIOBc6_LXKz9UV59?usp=drive_link"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors duration-300"
                     >
                         <Download size={20} />
-                        Download Full Gallery
+                        Download Files
                     </a>
                 </div>
             </motion.div>
