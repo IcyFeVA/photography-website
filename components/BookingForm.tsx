@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, User, Phone, MessageSquare } from 'lucide-react';
+import { Calendar, Clock, User, Phone, MessageSquare, Mail } from 'lucide-react';
 
 const BookingForm: React.FC = () => {
     const [dates, setDates] = useState<Date[]>([]);
@@ -99,6 +99,19 @@ const BookingForm: React.FC = () => {
                             required
                             className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-white/30 transition-colors"
                             placeholder="(555) 123-4567"
+                        />
+                    </div>
+                    <div className="col-span-1 md:col-span-2 space-y-2">
+                        <label htmlFor="email" className="text-sm font-medium text-muted flex items-center gap-2">
+                            <Mail className="w-4 h-4" /> Email
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            className="w-full bg-white/5 border border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-white/30 transition-colors"
+                            placeholder="your@email.com"
                         />
                     </div>
                 </div>
