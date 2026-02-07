@@ -14,7 +14,7 @@ interface PricingPackage {
 const headshotPackages: PricingPackage[] = [
   {
     name: "One Look (Headshot)",
-    price: "$475",
+    price: "$350",
     description: "A great place to start for actors, artists or professionals looking to update their look or business profile.",
     features: [
       "Shoot in one+ outfit",
@@ -24,7 +24,7 @@ const headshotPackages: PricingPackage[] = [
   },
   {
     name: "Two Looks (Headshots)",
-    price: "$600",
+    price: "$400",
     description: "Perfect for professionals updating company websites & LinkedIn, or actors showcasing theatrical and commercial sides.",
     features: [
       "Shoot in two+ outfits",
@@ -35,7 +35,7 @@ const headshotPackages: PricingPackage[] = [
   },
   {
     name: "Portfolio - Four Looks",
-    price: "$800",
+    price: "$650",
     description: "Great for actors to showcase range or for professionals to use on different platforms.",
     features: [
       "Shoot in four+ outfit choices",
@@ -48,7 +48,7 @@ const headshotPackages: PricingPackage[] = [
 const portraitPackages: PricingPackage[] = [
   {
     name: "LinkedIn Portrait",
-    price: "$250",
+    price: "$200",
     description: "A streamlined session designed specifically for your professional online presence.",
     features: [
       "30-minute studio/outdoor session",
@@ -69,10 +69,10 @@ const portraitPackages: PricingPackage[] = [
   },
   {
     name: "Family Portrait",
-    price: "$400",
+    price: "$450",
     description: "Timeless portraits capturing the connection of your loved ones.",
     features: [
-      "45-minute customized session",
+      "90-minute customized session",
       "Up to 5 family members",
       "One location",
       "5 high-resolution edited images"
