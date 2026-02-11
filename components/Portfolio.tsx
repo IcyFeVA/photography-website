@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { PORTFOLIO_ITEMS } from '../constants';
+import { PORTFOLIO_ITEMS, PORTFOLIO_COLUMNS } from '../constants';
 import { X } from 'lucide-react';
 
 const Portfolio: React.FC = () => {
@@ -11,33 +11,37 @@ const Portfolio: React.FC = () => {
   return (
     <section className="px-6 pb-24 max-w-7xl mx-auto">
       {/* Grid Layout */}
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-        {PORTFOLIO_ITEMS.map((item) => (
-          <motion.div
-            key={item.id}
-            initial={{ opacity: 0, scale: 1.05 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-10%" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            onClick={() => setSelectedId(item.id)}
-            className="break-inside-avoid relative group overflow-hidden bg-surface rounded-sm cursor-zoom-in"
-          >
-            <div className={`relative w-full ${item.aspectRatio} overflow-hidden`}>
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter saturate-[0.85] group-hover:saturate-100"
-                loading="lazy"
-              />
-              
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="inline-block border border-white/30 bg-black/20 backdrop-blur-sm px-4 py-2 text-xs font-medium tracking-[0.2em] text-white uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  [ {item.category} ]
-                </span>
-              </div>
-            </div>
-          </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        {PORTFOLIO_COLUMNS.map((column, colIndex) => (
+          <div key={colIndex} className="flex flex-col gap-6">
+            {column.map((item) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, scale: 1.05 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-10%" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                onClick={() => setSelectedId(item.id)}
+                className="relative group overflow-hidden bg-surface rounded-sm cursor-zoom-in"
+              >
+                <div className={`relative w-full ${item.aspectRatio} overflow-hidden`}>
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter saturate-[0.85] group-hover:saturate-100"
+                    loading="lazy"
+                  />
+
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span className="inline-block border border-white/30 bg-black/20 backdrop-blur-sm px-4 py-2 text-xs font-medium tracking-[0.2em] text-white uppercase transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      [ {item.category} ]
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         ))}
       </div>
 
@@ -53,7 +57,7 @@ const Portfolio: React.FC = () => {
             onClick={() => setSelectedId(null)}
           >
             {/* Close Button */}
-            <button 
+            <button
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedId(null);
@@ -71,24 +75,24 @@ const Portfolio: React.FC = () => {
               exit={{ scale: 0.95, opacity: 0 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               className="relative max-w-full max-h-full flex flex-col items-center"
-              onClick={(e) => e.stopPropagation()} 
+              onClick={(e) => e.stopPropagation()}
             >
-               <img
-                 src={selectedItem.src}
-                 alt={selectedItem.alt}
-                 className="max-h-[85vh] w-auto max-w-full object-contain shadow-2xl rounded-sm cursor-zoom-out"
-                 onClick={() => setSelectedId(null)}
-               />
-               <motion.div 
-                 initial={{ opacity: 0, y: 10 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 transition={{ delay: 0.2 }}
-                 className="mt-4 text-center"
-               >
-                  <p className="text-white/80 text-sm font-sans tracking-widest uppercase">
-                    [ {selectedItem.category} ]
-                  </p>
-               </motion.div>
+              <img
+                src={selectedItem.src}
+                alt={selectedItem.alt}
+                className="max-h-[85vh] w-auto max-w-full object-contain shadow-2xl rounded-sm cursor-zoom-out"
+                onClick={() => setSelectedId(null)}
+              />
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="mt-4 text-center"
+              >
+                <p className="text-white/80 text-sm font-sans tracking-widest uppercase">
+                  [ {selectedItem.category} ]
+                </p>
+              </motion.div>
             </motion.div>
           </motion.div>
         )}
