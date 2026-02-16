@@ -34,16 +34,16 @@ const InokaVera: React.FC = () => {
                 transition={{ delay: 0.2 }}
                 className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mb-16"
             >
-                <div className="aspect-[4/5] overflow-hidden rounded-sm bg-subtle">
+                <div className="aspect-[5/4] overflow-hidden rounded-sm bg-subtle">
                     <img
-                        src="/img/download_jessica_wong_web1.jpg"
+                        src="/img/download_inako_vera_web1.jpg"
                         alt="Inoka Vera Portrait 1"
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
                 </div>
                 <div className="aspect-[5/4] overflow-hidden rounded-sm bg-subtle">
                     <img
-                        src="/img/download_jessica_wong_web2.jpg"
+                        src="/img/download_inako_vera_web2.jpg"
                         alt="Inoka Vera Portrait 2"
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
@@ -67,7 +67,7 @@ const InokaVera: React.FC = () => {
                     </p>
 
                     <a
-                        href="#"
+                        href="https://drive.google.com/drive/folders/1pGg3E3vAz3DIoSzV4va9TYDAHEv07Mj3?usp=drive_link"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors duration-300"
