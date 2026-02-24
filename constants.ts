@@ -13,19 +13,27 @@ export const PORTFOLIO_COLUMNS = [
       aspectRatio: 'aspect-[8/10]',
       alt: 'Artistic portrait with shadow play'
     },
+
     {
-      id: '4',
-      src: '/img/download_jessica_wong_web2.jpg',
-      category: '-',
-      aspectRatio: 'aspect-[10/8]',
-      alt: 'Outdoor natural light portrait'
+      id: '7',
+      src: '/img/front19.png',
+      category: 'FRIENDS & FAMILY',
+      aspectRatio: 'aspect-[5/4]',
+      alt: 'Candid family moment'
     },
+    // {
+    //   id: '6',
+    //   src: '/img/front13.png',
+    //   category: 'ARTIST',
+    //   aspectRatio: 'aspect-[8/10]',
+    //   alt: 'Tech CEO headshot'
+    // },
     {
-      id: '6',
-      src: '/img/front13.png',
-      category: 'ARTIST',
+      id: '33',
+      src: '/img/front18.png',
+      category: 'FRIENDS & FAMILY',
       aspectRatio: 'aspect-[8/10]',
-      alt: 'Tech CEO headshot'
+      alt: 'Executive portrait'
     },
   ],
   // Column 2
@@ -37,29 +45,52 @@ export const PORTFOLIO_COLUMNS = [
       aspectRatio: 'aspect-[10/8]',
       alt: 'Intense cinematic headshot'
     },
+    // {
+    //   id: '3',
+    //   src: '/img/family3.png',
+    //   category: 'FAMILY',
+    //   aspectRatio: 'aspect-[4/3]',
+    //   alt: 'Outdoor natural light portrait'
+    // },
+
     {
-      id: '3',
-      src: '/img/family3.png',
-      category: 'FAMILY',
-      aspectRatio: 'aspect-[4/3]',
+      id: '34365',
+      src: '/img/download_rhys_madison_web1.jpg',
+      category: 'ACTRESS',
+      aspectRatio: 'aspect-[8/10]',
+      alt: 'Rhys Madison Portrait'
+    },
+    {
+      id: '4342',
+      src: '/img/download_inako_vera_web1.jpg',
+      category: '-',
+      aspectRatio: 'aspect-[10/8]',
       alt: 'Outdoor natural light portrait'
     },
     {
-      id: '33',
-      src: '/img/front18.png',
-      category: 'FRIENDS & FAMILY',
-      aspectRatio: 'aspect-[8/10]',
-      alt: 'Executive portrait'
+      id: '4',
+      src: '/img/download_jessica_wong_web2.jpg',
+      category: '-',
+      aspectRatio: 'aspect-[10/8]',
+      alt: 'Outdoor natural light portrait'
     },
+
   ],
   // Column 3
   [
+    // {
+    //   id: '44',
+    //   src: '/img/family4.png',
+    //   category: 'FAMILY',
+    //   aspectRatio: 'aspect-[4/3]',
+    //   alt: 'Fashion forward editorial shot'
+    // },
     {
-      id: '44',
-      src: '/img/family4.png',
-      category: 'FAMILY',
+      id: '1',
+      src: '/img/front21.png',
+      category: 'MODEL / ACTOR',
       aspectRatio: 'aspect-[4/3]',
-      alt: 'Fashion forward editorial shot'
+      alt: 'Dramatic actor headshot in black and white'
     },
     {
       id: '8',
@@ -68,20 +99,15 @@ export const PORTFOLIO_COLUMNS = [
       aspectRatio: 'aspect-[8/10]',
       alt: 'Artistic portrait with shadow play'
     },
+
+
     {
-      id: '1',
-      src: '/img/front21.png',
-      category: 'MODEL / ACTOR',
-      aspectRatio: 'aspect-[4/3]',
-      alt: 'Dramatic actor headshot in black and white'
+      id: '365',
+      src: '/img/download_isis_vlotman_web1.jpg',
+      category: 'ACTRESS',
+      aspectRatio: 'aspect-[8/10]',
+      alt: 'Isis Vlotman Portrait'
     },
-    // {
-    //   id: '7',
-    //   src: '/img/front19.png',
-    //   category: 'FRIENDS & FAMILY',
-    //   aspectRatio: 'aspect-[5/4]',
-    //   alt: 'Candid family moment'
-    // }
   ]
 ];
 
