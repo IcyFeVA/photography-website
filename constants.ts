@@ -63,14 +63,14 @@ export const PORTFOLIO_COLUMNS = [
     {
       id: '4342',
       src: '/img/download_inako_vera_web1.jpg',
-      category: '-',
+      category: 'ACTRESS',
       aspectRatio: 'aspect-[10/8]',
       alt: 'Outdoor natural light portrait'
     },
     {
       id: '4',
       src: '/img/download_jessica_wong_web2.jpg',
-      category: '-',
+      category: 'LINKEDIN',
       aspectRatio: 'aspect-[10/8]',
       alt: 'Outdoor natural light portrait'
     },
