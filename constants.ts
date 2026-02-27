@@ -53,14 +53,6 @@ export const PORTFOLIO_COLUMNS = [
     //   aspectRatio: 'aspect-[4/3]',
     //   alt: 'Outdoor natural light portrait'
     // },
-
-    {
-      id: '34365',
-      src: '/img/download_rhys_madison_web1.jpg',
-      category: 'ACTRESS',
-      aspectRatio: 'aspect-[8/10]',
-      alt: 'Rhys Madison Portrait'
-    },
     {
       id: '4342',
       src: '/img/download_inako_vera_web1.jpg',
@@ -68,6 +60,14 @@ export const PORTFOLIO_COLUMNS = [
       aspectRatio: 'aspect-[10/8]',
       alt: 'Outdoor natural light portrait'
     },
+    {
+      id: '34365',
+      src: '/img/download_rhys_madison_web1.jpg',
+      category: 'ACTRESS',
+      aspectRatio: 'aspect-[8/10]',
+      alt: 'Rhys Madison Portrait'
+    },
+
     {
       id: '4',
       src: '/img/download_jessica_wong_web2.jpg',
