@@ -14,13 +14,7 @@ export const PORTFOLIO_COLUMNS = [
       alt: 'Artistic portrait with shadow play'
     },
 
-    {
-      id: '7',
-      src: '/img/front19.png',
-      category: 'FRIENDS & FAMILY',
-      aspectRatio: 'aspect-[5/4]',
-      alt: 'Candid family moment'
-    },
+
     // {
     //   id: '6',
     //   src: '/img/front13.png',
@@ -34,6 +28,13 @@ export const PORTFOLIO_COLUMNS = [
       category: 'FRIENDS & FAMILY',
       aspectRatio: 'aspect-[8/10]',
       alt: 'Executive portrait'
+    },
+    {
+      id: '7',
+      src: '/img/front19.png',
+      category: 'FRIENDS & FAMILY',
+      aspectRatio: 'aspect-[5/4]',
+      alt: 'Candid family moment'
     },
   ],
   // Column 2
