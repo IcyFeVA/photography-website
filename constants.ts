@@ -85,6 +85,14 @@ export const PORTFOLIO_COLUMNS = [
     //   aspectRatio: 'aspect-[4/3]',
     //   alt: 'Fashion forward editorial shot'
     // },
+
+    {
+      id: '365',
+      src: '/img/download_isis_vlotman_web2.jpg',
+      category: 'ACTRESS',
+      aspectRatio: 'aspect-[8/10]',
+      alt: 'Isis Vlotman Portrait'
+    },
     {
       id: '1',
       src: '/img/front21.png',
@@ -92,6 +100,7 @@ export const PORTFOLIO_COLUMNS = [
       aspectRatio: 'aspect-[4/3]',
       alt: 'Dramatic actor headshot in black and white'
     },
+
     {
       id: '8',
       src: '/img/front9.png',
@@ -101,13 +110,7 @@ export const PORTFOLIO_COLUMNS = [
     },
 
 
-    {
-      id: '365',
-      src: '/img/download_isis_vlotman_web1.jpg',
-      category: 'ACTRESS',
-      aspectRatio: 'aspect-[8/10]',
-      alt: 'Isis Vlotman Portrait'
-    },
+
   ]
 ];
 
