@@ -2,38 +2,14 @@ import { PortfolioItem, Testimonial } from './types';
 
 export const IS_BOOKING_OPEN = true;
 
-// Add dates in 'YYYY-MM-DD' format to block them from being booked
-// Example: '2026-08-05'
+// Add dates in 'YYYY-MM-DD' format to block an entire day (e.g. '2026-03-03').
+// To block a specific time, append the time, e.g. '2026-03-03-2pm' or 'YYYY-MM-DD-10am'.
+// If all available times for a day are blocked individually, the whole day will gray out automatically.
 export const UNAVAILABLE_DATES: string[] = [
-  '2026-03-03',
-  '2026-03-04',
-  '2026-03-05',
-  '2026-03-06',
-  '2026-03-07',
-  '2026-03-08',
-  '2026-03-09',
-  '2026-03-10',
-  '2026-03-11',
-  '2026-03-12',
-  '2026-03-13',
-  '2026-03-14',
-  '2026-03-15',
-  '2026-03-16',
-  '2026-03-17',
-  '2026-03-18',
-  '2026-03-19',
-  '2026-03-20',
-  '2026-03-21',
-  '2026-03-22',
-  '2026-03-23',
-  '2026-03-24',
-  '2026-03-25',
-  '2026-03-26',
-  '2026-03-27',
-  '2026-03-28',
-  '2026-03-29',
-  '2026-03-30',
-  '2026-03-31',
+  '2026-03-03-10am',
+  '2026-03-10-10am',
+  '2026-03-17-10am',
+
 ];
 
 // Using placeholder images that mimic high-end portrait photography

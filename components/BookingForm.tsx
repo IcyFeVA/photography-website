@@ -45,9 +45,8 @@ const BookingForm: React.FC = () => {
         setDates(getNextDates(12));
     }, []);
 
-    const timeSlots = React.useMemo(() => {
-        if (!selectedDate) return [];
-        const [year, month, day] = selectedDate.split('-').map(Number);
+    const getTimeSlotsForDate = (dateStr: string) => {
+        const [year, month, day] = dateStr.split('-').map(Number);
         const date = new Date(year, month - 1, day);
         const dayOfWeek = date.getDay();
 
@@ -65,7 +64,18 @@ const BookingForm: React.FC = () => {
             default:
                 return [];
         }
+    };
+
+    const timeSlots = React.useMemo(() => {
+        if (!selectedDate) return [];
+        return getTimeSlotsForDate(selectedDate);
     }, [selectedDate]);
+
+    const isTimeSlotUnavailable = (dateStr: string, time: string) => {
+        const timeSuffix = time.replace(':00 ', '').toLowerCase(); // e.g., "2pm", "10am"
+        return UNAVAILABLE_DATES.includes(dateStr) || UNAVAILABLE_DATES.includes(`${dateStr}-${timeSuffix}`);
+    };
+
 
     return (
         <div className="max-w-3xl mx-auto bg-surface border border-white/10 p-8 md:p-12 rounded-sm">
@@ -132,7 +142,10 @@ const BookingForm: React.FC = () => {
 
                             const displayDate = date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
                             const isSelected = selectedDate === dateString;
-                            const isUnavailable = UNAVAILABLE_DATES.includes(dateString);
+
+                            const availableTimeSlots = getTimeSlotsForDate(dateString);
+                            const isUnavailable = UNAVAILABLE_DATES.includes(dateString) ||
+                                (availableTimeSlots.length > 0 && availableTimeSlots.every(time => isTimeSlotUnavailable(dateString, time)));
 
                             return (
                                 <button
@@ -174,19 +187,24 @@ const BookingForm: React.FC = () => {
                     <div className="flex flex-wrap gap-3">
                         {timeSlots.map((time) => {
                             const isSelected = selectedTime === time;
+                            const isTimeUnavailable = selectedDate ? isTimeSlotUnavailable(selectedDate, time) : false;
+
                             return (
                                 <button
                                     key={time}
                                     type="button"
-                                    disabled={!selectedDate}
+                                    disabled={!selectedDate || isTimeUnavailable}
                                     onClick={() => setSelectedTime(time)}
                                     className={`
-                    px-6 py-2 rounded-full border text-sm transition-all
-                    ${isSelected
-                                            ? 'bg-white text-black border-white font-medium'
-                                            : 'bg-white/5 border-white/10 text-muted hover:bg-white/10'}
-                    ${!selectedDate && 'opacity-50 cursor-not-allowed'}
-                  `}
+                                        px-6 py-2 rounded-full border text-sm transition-all
+                                        ${isTimeUnavailable
+                                            ? 'opacity-30 cursor-not-allowed border-transparent bg-white/5 line-through'
+                                            : isSelected
+                                                ? 'bg-white text-black border-white font-medium'
+                                                : 'bg-white/5 border-white/10 text-muted hover:bg-white/10'
+                                        }
+                                        ${!selectedDate && 'opacity-50 cursor-not-allowed'}
+                                    `}
                                 >
                                     {time}
                                 </button>
