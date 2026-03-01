@@ -41,9 +41,15 @@ const Offer: React.FC = () => {
 
                     <div className="bg-surface/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-white/30 transition-colors duration-500">
                         <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-gray-500 to-transparent"></div>
-                        <div className="flex items-end gap-4 mb-6">
-                            <span className="text-6xl font-light text-white">$179</span>
-                            <span className="text-muted text-sm pb-2 uppercase tracking-wide">All-inclusive</span>
+                        <div className="flex flex-col mb-8 mt-2">
+                            <div className="flex items-center gap-4 mb-1">
+                                <span className="text-3xl lg:text-4xl text-gray-500 line-through decoration-red-500/50 font-light">$579</span>
+                                <span className="bg-red-500/10 text-red-500 border border-red-500/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Save $400</span>
+                            </div>
+                            <div className="flex items-end gap-4">
+                                <span className="text-7xl lg:text-8xl font-medium text-white tracking-tight">$179</span>
+                                <span className="text-muted text-sm pb-3 uppercase tracking-wide">All-inclusive</span>
+                            </div>
                         </div>
 
                         <ul className="space-y-4">

@@ -35,7 +35,7 @@ const headshotPackages: PricingPackage[] = [
   },
   {
     name: "Portfolio - Four Looks",
-    price: "$650",
+    price: "$579",
     description: "Great for actors to showcase range or for professionals to use on different platforms.",
     features: [
       "Shoot in four+ outfit choices",
