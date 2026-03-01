@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, User, Phone, MessageSquare, Mail } from 'lucide-react';
+import { UNAVAILABLE_DATES } from '../constants';
 
 const BookingForm: React.FC = () => {
     const [dates, setDates] = useState<Date[]>([]);
@@ -131,21 +132,26 @@ const BookingForm: React.FC = () => {
 
                             const displayDate = date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
                             const isSelected = selectedDate === dateString;
+                            const isUnavailable = UNAVAILABLE_DATES.includes(dateString);
 
                             return (
                                 <button
                                     key={dateString}
                                     type="button"
+                                    disabled={isUnavailable}
                                     onClick={() => {
                                         setSelectedDate(dateString);
                                         setSelectedTime(null);
                                     }}
                                     className={`
-                    p-3 rounded-sm border text-sm transition-all
-                    ${isSelected
-                                            ? 'bg-white text-black border-white font-medium'
-                                            : 'bg-white/5 border-white/10 text-muted hover:bg-white/10'}
-                  `}
+                                        p-3 rounded-sm border text-sm transition-all
+                                        ${isUnavailable
+                                            ? 'opacity-30 cursor-not-allowed border-transparent bg-white/5 line-through'
+                                            : isSelected
+                                                ? 'bg-white text-black border-white font-medium'
+                                                : 'bg-white/5 border-white/10 text-muted hover:bg-white/10'
+                                        }
+                                    `}
                                 >
                                     {displayDate}
                                 </button>
