@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             </div>
             <span className="text-xs font-medium tracking-wide text-text/80">
               {/* Now booking for <span className="text-white font-semibold">{next}: 2 spots left</span> */}
-              Now booking for <span className="text-white font-semibold">March</span>
+              Now booking for <span className="text-white font-semibold">{next}</span>
             </span>
           </motion.div>
 
