@@ -53,18 +53,19 @@ const BookingForm: React.FC = () => {
         switch (dayOfWeek) {
             case 1: // Monday: 4 pm - 6 pm
                 return ["4:00 PM"];
-            case 2: // Tuesday: 10 am - 12 pm, 2 pm - 4 pm, 4 pm - 6 pm
-                return ["10:00 AM", "2:00 PM", "4:00 PM"];
+            case 2: // Tuesday: 4 pm - 6 pm
+                return ["4:00 PM"];
             case 3: // Wednesday: 4 pm - 6 pm
                 return ["4:00 PM"];
-            case 4: // Thursday: 4 pm - 6 pm
-                return ["4:00 PM"];
+            case 4: // Thursday: 10 am - 12 pm, 2 pm - 4 pm, 4 pm - 6 pm
+                return ["10:00 AM", "2:00 PM", "4:00 PM"];
             case 5: // Friday: 10 am - 12 pm
                 return ["10:00 AM"];
             default:
                 return [];
         }
     };
+
 
     const timeSlots = React.useMemo(() => {
         if (!selectedDate) return [];
