@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Camera, Clock, Download, Image as ImageIcon, Star } from 'lucide-react';
 import SEO from '../SEO';
@@ -20,12 +19,7 @@ const Offers: React.FC = () => {
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
 
                 {/* Text Content */}
-                <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="flex-1 space-y-6 z-10"
-                >
+                <div className="flex-1 space-y-6 z-10 animate-slide-in-left">
                     <div className="inline-flex items-center space-x-2 bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-xs font-sans tracking-widest uppercase">
                         <Star className="w-3 h-3 fill-white text-white" />
                         <span>Actor & Artist Sessions</span>
@@ -50,41 +44,29 @@ const Offers: React.FC = () => {
                             <span className="text-muted text-sm pb-2 uppercase tracking-wide">All-inclusive</span>
                         </div>
                         <ul className="space-y-3">
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            <li className="flex items-start text-gray-300">
                                 <Clock className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>One Hour Session:</strong> A focused, efficient session to capture your best look.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Camera className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Up to Two Outfits:</strong> Theatrical and commercial looks covered.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <ImageIcon className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Two Master Edits:</strong> High-end retouching that keeps you looking natural and striking.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Download className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>All High-Res JPGs:</strong> Every edited file delivered in full resolution, ready to submit.</span>
-                            </motion.li>
+                            </li>
                         </ul>
                         <Link
                             to="/inquire"
                             className="inline-flex items-center justify-center w-full sm:w-auto bg-white/10 text-white font-sans font-medium px-10 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 rounded-sm group/btn border border-white/20 hover:border-white mt-6"
                         >
                             <span>Book Essential Session</span>
-                            <motion.span className="ml-2 opacity-0 group-hover/btn:opacity-100 -translate-x-2 group-hover/btn:translate-x-0 transition-all duration-300 inline-block">→</motion.span>
+                            <span className="ml-2 opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all duration-300 inline-block">→</span>
                         </Link>
                     </div>
 
@@ -99,51 +81,37 @@ const Offers: React.FC = () => {
                             <span className="text-muted text-sm pb-2 uppercase tracking-wide">All-inclusive</span>
                         </div>
                         <ul className="space-y-3">
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            <li className="flex items-start text-gray-300">
                                 <Clock className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Two Hour Session:</strong> Relaxed, unhurried environment to capture your authentic self.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Camera className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Four Outfits:</strong> Showcase incredible range across theatrical and commercial looks.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <ImageIcon className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Four Master Edits:</strong> High-end retouching that keeps you looking natural and striking.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Download className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>JPG + RAW Files:</strong> Full-resolution JPGs and original RAW files — complete creative control.</span>
-                            </motion.li>
+                            </li>
                         </ul>
                         <Link
                             to="/inquire"
                             className="inline-flex items-center justify-center w-full sm:w-auto bg-white text-black font-sans font-medium px-10 py-4 text-sm uppercase tracking-widest hover:bg-gray-200 transition-all duration-300 hover:text-black rounded-sm group/btn mt-6"
                         >
                             <span>Book Premium Session</span>
-                            <motion.span className="ml-2 opacity-0 group-hover/btn:opacity-100 -translate-x-2 group-hover/btn:translate-x-0 transition-all duration-300 inline-block">→</motion.span>
+                            <span className="ml-2 opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all duration-300 inline-block">→</span>
                         </Link>
                     </div>
-                </motion.div>
+                </div>
 
                 {/* Image Grid */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                    className="flex-1 w-full grid grid-cols-2 gap-4 relative z-10 lg:sticky lg:top-32"
+                <div
+                    className="flex-1 w-full grid grid-cols-2 gap-4 relative z-10 lg:sticky lg:top-32 animate-scale-in"
+                    style={{ animationDelay: '0.15s' }}
                 >
                     {/* Left column */}
                     <div className="space-y-4 mt-12">
@@ -170,7 +138,7 @@ const Offers: React.FC = () => {
                             <p className="text-xs text-muted font-medium uppercase tracking-widest">— Elena R., Actress</p>
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
             </div>
         </section>
