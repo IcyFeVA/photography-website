@@ -19,7 +19,7 @@ const Offers: React.FC = () => {
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
 
                 {/* Text Content */}
-                <div className="flex-1 space-y-6 z-10 animate-slide-in-left">
+                <div className="flex-1 space-y-6 z-10">
                     <div className="inline-flex items-center space-x-2 bg-white/10 text-white border border-white/20 px-4 py-2 rounded-full text-xs font-sans tracking-widest uppercase">
                         <Star className="w-3 h-3 fill-white text-white" />
                         <span>Actor & Artist Sessions</span>
@@ -109,10 +109,7 @@ const Offers: React.FC = () => {
                 </div>
 
                 {/* Image Grid */}
-                <div
-                    className="flex-1 w-full grid grid-cols-2 gap-4 relative z-10 lg:sticky lg:top-32 animate-scale-in"
-                    style={{ animationDelay: '0.15s' }}
-                >
+                <div className="flex-1 w-full grid grid-cols-2 gap-4 relative z-10 lg:sticky lg:top-32">
                     {/* Left column */}
                     <div className="space-y-4 mt-12">
                         <div className="aspect-[4/5] rounded-xl overflow-hidden transition-all duration-700 hover:-translate-y-2 border border-white/5 shadow-2xl">
