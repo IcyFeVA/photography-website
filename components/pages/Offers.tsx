@@ -21,8 +21,8 @@ const Offers: React.FC = () => {
 
                 {/* Text Content */}
                 <motion.div
-                    initial={{ x: -30 }}
-                    animate={{ x: 0 }}
+                    initial={{ opacity: 0, x: -30 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="flex-1 space-y-6 z-10"
                 >
@@ -50,22 +50,34 @@ const Offers: React.FC = () => {
                             <span className="text-muted text-sm pb-2 uppercase tracking-wide">All-inclusive</span>
                         </div>
                         <ul className="space-y-3">
-                            <li className="flex items-start text-gray-300">
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <Clock className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>One Hour Session:</strong> A focused, efficient session to capture your best look.</span>
-                            </li>
-                            <li className="flex items-start text-gray-300">
+                            </motion.li>
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <Camera className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Up to Two Outfits:</strong> Theatrical and commercial looks covered.</span>
-                            </li>
-                            <li className="flex items-start text-gray-300">
+                            </motion.li>
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <ImageIcon className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Two Master Edits:</strong> High-end retouching that keeps you looking natural and striking.</span>
-                            </li>
-                            <li className="flex items-start text-gray-300">
+                            </motion.li>
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <Download className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>All High-Res JPGs:</strong> Every edited file delivered in full resolution, ready to submit.</span>
-                            </li>
+                            </motion.li>
                         </ul>
                         <Link
                             to="/inquire"
@@ -87,22 +99,34 @@ const Offers: React.FC = () => {
                             <span className="text-muted text-sm pb-2 uppercase tracking-wide">All-inclusive</span>
                         </div>
                         <ul className="space-y-3">
-                            <li className="flex items-start text-gray-300">
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <Clock className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Two Hour Session:</strong> Relaxed, unhurried environment to capture your authentic self.</span>
-                            </li>
-                            <li className="flex items-start text-gray-300">
+                            </motion.li>
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <Camera className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Four Outfits:</strong> Showcase incredible range across theatrical and commercial looks.</span>
-                            </li>
-                            <li className="flex items-start text-gray-300">
+                            </motion.li>
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <ImageIcon className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Four Master Edits:</strong> High-end retouching that keeps you looking natural and striking.</span>
-                            </li>
-                            <li className="flex items-start text-gray-300">
+                            </motion.li>
+                            <motion.li
+                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
+                                className="flex items-start text-gray-300"
+                            >
                                 <Download className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>JPG + RAW Files:</strong> Full-resolution JPGs and original RAW files — complete creative control.</span>
-                            </li>
+                            </motion.li>
                         </ul>
                         <Link
                             to="/inquire"
@@ -116,8 +140,8 @@ const Offers: React.FC = () => {
 
                 {/* Image Grid */}
                 <motion.div
-                    initial={{ scale: 0.97 }}
-                    animate={{ scale: 1 }}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.2 }}
                     className="flex-1 w-full grid grid-cols-2 gap-4 relative z-10 lg:sticky lg:top-32"
                 >
