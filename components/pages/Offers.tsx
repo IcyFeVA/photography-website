@@ -21,8 +21,8 @@ const Offers: React.FC = () => {
 
                 {/* Text Content */}
                 <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ x: -30 }}
+                    animate={{ x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="flex-1 space-y-6 z-10"
                 >
@@ -140,8 +140,8 @@ const Offers: React.FC = () => {
 
                 {/* Image Grid */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
+                    initial={{ scale: 0.97 }}
+                    animate={{ scale: 1 }}
                     transition={{ duration: 1, delay: 0.2 }}
                     className="flex-1 w-full grid grid-cols-2 gap-4 relative z-10 lg:sticky lg:top-32"
                 >
