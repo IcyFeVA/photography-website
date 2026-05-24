@@ -18,6 +18,7 @@ import JessicaWong from './components/pages/JessicaWong';
 import InokaVera from './components/pages/InokaVera';
 import IsisVlotman from './components/pages/IsisVlotman';
 import Offer from './components/pages/Offer';
+import Offers from './components/pages/Offers';
 import SEO from './components/SEO';
 import Schema from './components/Schema';
 
@@ -73,6 +74,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/inquire" element={<Inquire />} />
           <Route path="/offer" element={<Offer />} />
+          <Route path="/offers" element={<Offers />} />
           <Route path="/rhys-madison" element={<RhysMadison />} />
           <Route path="/jessica-wong" element={<JessicaWong />} />
           <Route path="/inoka-vera" element={<InokaVera />} />
