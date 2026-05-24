@@ -50,34 +50,22 @@ const Offers: React.FC = () => {
                             <span className="text-muted text-sm pb-2 uppercase tracking-wide">All-inclusive</span>
                         </div>
                         <ul className="space-y-3">
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            <li className="flex items-start text-gray-300">
                                 <Clock className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>One Hour Session:</strong> A focused, efficient session to capture your best look.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Camera className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Up to Two Outfits:</strong> Theatrical and commercial looks covered.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <ImageIcon className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Two Master Edits:</strong> High-end retouching that keeps you looking natural and striking.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Download className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>All High-Res JPGs:</strong> Every edited file delivered in full resolution, ready to submit.</span>
-                            </motion.li>
+                            </li>
                         </ul>
                         <Link
                             to="/inquire"
@@ -99,34 +87,22 @@ const Offers: React.FC = () => {
                             <span className="text-muted text-sm pb-2 uppercase tracking-wide">All-inclusive</span>
                         </div>
                         <ul className="space-y-3">
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            <li className="flex items-start text-gray-300">
                                 <Clock className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Two Hour Session:</strong> Relaxed, unhurried environment to capture your authentic self.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Camera className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Four Outfits:</strong> Showcase incredible range across theatrical and commercial looks.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <ImageIcon className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>Four Master Edits:</strong> High-end retouching that keeps you looking natural and striking.</span>
-                            </motion.li>
-                            <motion.li
-                                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
-                                className="flex items-start text-gray-300"
-                            >
+                            </li>
+                            <li className="flex items-start text-gray-300">
                                 <Download className="w-5 h-5 mr-4 text-white shrink-0 mt-0.5" />
                                 <span className="text-base"><strong>JPG + RAW Files:</strong> Full-resolution JPGs and original RAW files — complete creative control.</span>
-                            </motion.li>
+                            </li>
                         </ul>
                         <Link
                             to="/inquire"
