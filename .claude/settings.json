@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"className.*\\\\`\\\\|template literal\\\\|classNames\\(\" /home/meex/Documents/dev/photography-website/components/ --include=\"*.tsx\")",
+      "Bash(npm install *)"
+    ]
+  }
+}
