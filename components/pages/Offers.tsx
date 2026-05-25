@@ -13,8 +13,8 @@ const Offers: React.FC = () => {
             />
 
             {/* Background Decor */}
-            <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
-            <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-white/5 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="absolute top-[-10%] left-[-10%] w-96 h-96 bg-white/3 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-white/3 rounded-full blur-3xl pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-start">
 
@@ -34,7 +34,7 @@ const Offers: React.FC = () => {
                     </p>
 
                     {/* Essential — $99 */}
-                    <div className="bg-surface/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-white/30 transition-colors duration-500">
+                    <div className="bg-surface/60 border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-white/30 transition-colors duration-500">
                         <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-gray-400 to-transparent"></div>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="text-xs font-sans tracking-widest uppercase text-muted">Essential</span>
@@ -71,7 +71,7 @@ const Offers: React.FC = () => {
                     </div>
 
                     {/* Premium — $179 */}
-                    <div className="bg-surface/40 backdrop-blur-md border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-white/30 transition-colors duration-500">
+                    <div className="bg-surface/60 border border-white/10 p-8 rounded-2xl relative overflow-hidden group hover:border-white/30 transition-colors duration-500">
                         <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-gray-500 to-transparent"></div>
                         <div className="flex items-center gap-3 mb-4">
                             <span className="text-xs font-sans tracking-widest uppercase text-muted">Premium</span>
