@@ -34,9 +34,9 @@ export const PORTFOLIO_COLUMNS = [
     // },
     {
       id: '33',
-      src: '/img/front18.png',
-      category: 'FRIENDS & FAMILY',
-      aspectRatio: 'aspect-[8/10]',
+      src: '/img/marcel.png',
+      category: 'Artist',
+      aspectRatio: 'aspect-[10/8]',
       alt: 'Executive portrait'
     },
     {
