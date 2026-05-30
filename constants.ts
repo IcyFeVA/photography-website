@@ -9,7 +9,7 @@ export const UNAVAILABLE_DATES: string[] = [
   '2026-03-03-10am',
   '2026-03-10-10am',
   '2026-03-17-10am',
-
+  '2026-06-16-4pm',
 ];
 
 // Using placeholder images that mimic high-end portrait photography
