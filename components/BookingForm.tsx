@@ -35,7 +35,7 @@ const BookingForm: React.FC = () => {
             while (dates.length < count) {
                 const day = current.getDay();
                 // 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri
-                if (day === 1 || day === 2 || day === 3 || day === 4 || day === 5) {
+                if (day === 1 || day === 2 || day === 3 || day === 4) {
                     dates.push(new Date(current));
                 }
                 current.setDate(current.getDate() + 1);
@@ -58,9 +58,9 @@ const BookingForm: React.FC = () => {
             case 3: // Wednesday: 4 pm - 6 pm
                 return ["4:00 PM", "6:00 PM"];
             case 4: // Thursday: 10 am - 12 pm, 2 pm - 4 pm, 4 pm - 6 pm
-                return ["10:00 AM", "12:00 PM", "2:00 PM"];
-            case 5: // Friday: 10 am - 12 pm
-                return ["10:00 AM"];
+                return ["4:00 PM", "6:00 PM"];
+            // case 5: // Friday: 10 am - 12 pm
+            //     return ["10:00 AM"];
             default:
                 return [];
         }
