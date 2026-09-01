@@ -90,7 +90,7 @@ const Offer: React.FC = () => {
                             </motion.span>
                         </Link>
                         <p className="text-xs text-red-500 uppercase tracking-wider font-sans">
-                            * Mention this ad when booking! Offer ends on October 31st, 2026.
+                            * Mention this ad when booking! Offer ends on September 31st, 2026.
                         </p>
                     </div>
                 </motion.div>
