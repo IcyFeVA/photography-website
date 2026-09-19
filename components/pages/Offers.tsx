@@ -109,17 +109,17 @@ const Offers: React.FC = () => {
                     {/* Left column */}
                     <div className="space-y-4 mt-12">
                         <div className="aspect-[4/5] rounded-xl overflow-hidden transition-all duration-700 hover:-translate-y-2 border border-white/5 shadow-2xl">
-                            <img src="/img/front21.png" alt="Actor Headshot" className="w-full h-full object-cover" />
+                            <img src="/img/front21.webp" alt="Actor Headshot" className="w-full h-full object-cover" />
                         </div>
                         <div className="aspect-[1/1] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-700 border border-white/5 shadow-2xl">
-                            <img src="/img/theatrical1.png" alt="Actor Headshot Moody" className="w-full h-full object-cover" />
+                            <img src="/img/theatrical1.webp" alt="Actor Headshot Moody" className="w-full h-full object-cover" />
                         </div>
                     </div>
 
                     {/* Right column */}
                     <div className="space-y-4">
                         <div className="aspect-[3/4] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-700 border border-white/5 shadow-2xl">
-                            <img src="/img/front20.png" alt="Artist Headshot" className="w-full h-full object-cover" />
+                            <img src="/img/front20.webp" alt="Artist Headshot" className="w-full h-full object-cover" />
                         </div>
                         <div className="bg-surface/50 border border-white/10 p-6 rounded-xl backdrop-blur-sm">
                             <div className="flex text-white mb-3">

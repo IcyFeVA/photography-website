@@ -36,14 +36,14 @@ const RhysMadison: React.FC = () => {
             >
                 <div className="aspect-[4/5] overflow-hidden rounded-sm bg-subtle">
                     <img
-                        src="/img/download_rhys_madison_web1.jpg"
+                        src="/img/download_rhys_madison_web1.webp"
                         alt="Rhys Madison Wilson Portrait 1"
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
                 </div>
                 <div className="aspect-[5/4] overflow-hidden rounded-sm bg-subtle">
                     <img
-                        src="/img/download_rhys_madison_web2.jpg"
+                        src="/img/download_rhys_madison_web2.webp"
                         alt="Rhys Madison Wilson Portrait 2"
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />

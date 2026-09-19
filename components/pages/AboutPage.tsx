@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => {
           <div className="aspect-[3/4] bg-surface relative overflow-hidden rounded-sm">
             {/* Placeholder for Pascal's portrait */}
             <img
-              src="/img/me.png"
+              src="/img/me.webp"
               alt="Pascal - Photographer"
               className="w-full h-full object-cover"
             />

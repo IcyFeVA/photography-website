@@ -21,7 +21,7 @@ const About: React.FC = () => {
             >
               <div className="aspect-[8/10] w-full overflow-hidden">
                 <img
-                  src="/img/front17.png"
+                  src="/img/front17.webp"
                   alt="Corporate Portrait"
                   className="w-full h-full object-cover hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
                 />
@@ -36,7 +36,7 @@ const About: React.FC = () => {
             >
               <div className="aspect-[8/10] w-full overflow-hidden">
                 <img
-                  src="/img/front1.png"
+                  src="/img/front1.webp"
                   alt="Theatrical Portrait"
                   className="w-full h-full object-cover hover:grayscale-0 transition-all duration-700 opacity-80 hover:opacity-100"
                 />

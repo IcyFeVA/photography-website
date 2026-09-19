@@ -65,7 +65,7 @@ const Portraits: React.FC = () => {
         <div className="space-y-4">
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
             <img
-              src="/img/corporate1.png"
+              src="/img/corporate1.webp"
               alt="Executive Portrait"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
@@ -79,7 +79,7 @@ const Portraits: React.FC = () => {
         <div className="space-y-4 md:mt-24">
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
             <img
-              src="/img/family2.png"
+              src="/img/family2.webp"
               alt="Family Portrait"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />

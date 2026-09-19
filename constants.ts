@@ -18,7 +18,7 @@ export const PORTFOLIO_COLUMNS = [
   [
     {
       id: '0',
-      src: '/img/front20.png',
+      src: '/img/front20.webp',
       category: 'ACTRESS',
       aspectRatio: 'aspect-[8/10]',
       alt: 'Artistic portrait with shadow play'
@@ -27,21 +27,21 @@ export const PORTFOLIO_COLUMNS = [
 
     // {
     //   id: '6',
-    //   src: '/img/front13.png',
+    //   src: '/img/front13.webp',
     //   category: 'ARTIST',
     //   aspectRatio: 'aspect-[8/10]',
     //   alt: 'Tech CEO headshot'
     // },
     {
       id: '33',
-      src: '/img/marcel.png',
+      src: '/img/marcel.webp',
       category: 'Artist',
       aspectRatio: 'aspect-[10/8]',
       alt: 'Executive portrait'
     },
     {
       id: '7',
-      src: '/img/front19.png',
+      src: '/img/front19.webp',
       category: 'FRIENDS & FAMILY',
       aspectRatio: 'aspect-[5/4]',
       alt: 'Candid family moment'
@@ -51,28 +51,28 @@ export const PORTFOLIO_COLUMNS = [
   [
     {
       id: '22',
-      src: '/img/front22.png',
+      src: '/img/front22.webp',
       category: 'THEATRICAL ACTOR',
       aspectRatio: 'aspect-[10/8]',
       alt: 'Intense cinematic headshot'
     },
     // {
     //   id: '3',
-    //   src: '/img/family3.png',
+    //   src: '/img/family3.webp',
     //   category: 'FAMILY',
     //   aspectRatio: 'aspect-[4/3]',
     //   alt: 'Outdoor natural light portrait'
     // },
     {
       id: '4342',
-      src: '/img/download_inako_vera_web1.jpg',
+      src: '/img/download_inako_vera_web1.webp',
       category: 'ACTRESS',
       aspectRatio: 'aspect-[10/8]',
       alt: 'Outdoor natural light portrait'
     },
     {
       id: '34365',
-      src: '/img/download_rhys_madison_web1.jpg',
+      src: '/img/download_rhys_madison_web1.webp',
       category: 'ACTRESS',
       aspectRatio: 'aspect-[8/10]',
       alt: 'Rhys Madison Portrait'
@@ -80,7 +80,7 @@ export const PORTFOLIO_COLUMNS = [
 
     {
       id: '4',
-      src: '/img/download_jessica_wong_web2.jpg',
+      src: '/img/download_jessica_wong_web2.webp',
       category: 'LINKEDIN',
       aspectRatio: 'aspect-[10/8]',
       alt: 'Outdoor natural light portrait'
@@ -91,7 +91,7 @@ export const PORTFOLIO_COLUMNS = [
   [
     // {
     //   id: '44',
-    //   src: '/img/family4.png',
+    //   src: '/img/family4.webp',
     //   category: 'FAMILY',
     //   aspectRatio: 'aspect-[4/3]',
     //   alt: 'Fashion forward editorial shot'
@@ -99,14 +99,14 @@ export const PORTFOLIO_COLUMNS = [
 
     {
       id: '365',
-      src: '/img/download_isis_vlotman_web2.jpg',
+      src: '/img/download_isis_vlotman_web2.webp',
       category: 'ACTRESS',
       aspectRatio: 'aspect-[8/10]',
       alt: 'Isis Vlotman Portrait'
     },
     {
       id: '1',
-      src: '/img/front21.png',
+      src: '/img/front21.webp',
       category: 'MODEL / ACTOR',
       aspectRatio: 'aspect-[4/3]',
       alt: 'Dramatic actor headshot in black and white'
@@ -114,7 +114,7 @@ export const PORTFOLIO_COLUMNS = [
 
     {
       id: '8',
-      src: '/img/front9.png',
+      src: '/img/front9.webp',
       category: 'DANCER',
       aspectRatio: 'aspect-[8/10]',
       alt: 'Artistic portrait with shadow play'
