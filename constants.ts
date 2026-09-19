@@ -7,9 +7,16 @@ export const IS_BOOKING_OPEN = true;
 // If all available times for a day are blocked individually, the whole day will gray out automatically.
 export const UNAVAILABLE_DATES: string[] = [
   '2026-03-03-10am',
-  '2026-03-10-10am',
-  '2026-03-17-10am',
-  '2026-06-16-4pm',
+  '2026-09-21',
+  '2026-09-22',
+  '2026-09-23',
+  '2026-09-24',
+  '2026-09-25',
+  '2026-09-26',
+  '2026-09-27',
+  '2026-09-28',
+  '2026-09-29',
+  '2026-09-30',
 ];
 
 // Using placeholder images that mimic high-end portrait photography
